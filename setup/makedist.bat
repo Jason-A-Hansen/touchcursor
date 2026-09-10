@@ -1,6 +1,6 @@
 @echo off
 
-set VERSION=1.7.1
+set VERSION=1.7.2
 set INSTALLER_NAME=TouchCursorSetup-%VERSION%
 set ZIP_NAME=TouchCursor-%VERSION%
 
