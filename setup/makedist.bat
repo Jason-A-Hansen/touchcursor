@@ -20,12 +20,7 @@ if errorlevel 1 exit %errorlevel%
 copy ..\bin\release\touchcursor_update.exe TouchCursor
 if errorlevel 1 exit %errorlevel%
 
-if exist ..\docs\help.html (
-    copy ..\docs\*.* TouchCursor\docs >nul
-) else (
-    make_docs.py TouchCursor\docs
-    if errorlevel 1 exit %errorlevel%
-)
+copy ..\docs\*.* TouchCursor\docs >nul
 
 copy ..\COPYING.txt TouchCursor
 if errorlevel 1 exit %errorlevel%
